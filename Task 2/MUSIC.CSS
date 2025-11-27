@@ -1,0 +1,59 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: black;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;   
+    height: 100vh; 
+}
+.player-container {
+    width: 350px;
+    background: #370101;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+}
+.controls button {
+    font-size: 22px;
+    margin: 10px;
+    padding: 8px 15px;
+    border: none;
+    background:black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.controls button:hover {
+    background: gray;
+}
+#progress {
+    width: 100%;
+    margin: 10px 0;
+    color: black;
+    
+}
+
+#volume {
+    width: 100%;
+
+    
+
+}
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+#playlist li {
+    background: black;
+    padding: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#playlist li:hover {
+    background:black;
+}

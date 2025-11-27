@@ -1,0 +1,96 @@
+body{
+  background-color:black;
+font-family: "Gill Sans", sans-serif;
+  text-align: center;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 0 0 8px rgba(9, 6, 6, 0.4);
+}
+
+.gallery{
+  width: max-content;      /* container jitna chahiye utna hi space lega */
+  display: grid;
+  grid-template-columns: repeat(5, 200px); /* exact 5 columns of same width */
+  gap: 40px;                /* side spacing bohot kam */
+  margin: 5px;               /* no outer margin */
+  padding: 0;
+  
+
+  
+}
+@media (max-width: 768px) {
+  .gallery {
+     grid-template-columns: repeat(2, 150px);
+     gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+     grid-template-columns: repeat(1, 250px);
+  }
+}
+
+
+.gallery img{
+  width: 200px;      /* image chhoti aur fix size hogi */
+  height: 180px;     /* proper rectangle shape */
+  object-fit: cover; /* image crop hoke perfect fit */
+  border-radius:8px;
+  cursor: pointer;
+  
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+}
+.close {
+  color:white;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px; right: 30px;
+}
+.navigation {
+  margin-top: 15px;
+}
+
+button {
+  background: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#next{
+  color: white;
+}
+#prev{
+  color: white;
+}

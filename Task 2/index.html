@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="music.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="album-art">🎵</div>
+      <h2 id="title">Song Title</h2>
+      <h4 id="artist">Artist Name</h4>
+
+      <audio id="audio"></audio>
+      <!--IT is for the pre play and puse buttons -->
+      <div class="controls">
+        <button id="shuffle" title="Shuffle">🔀</button>
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+        <button id="repeat" title="Repeat">🔁</button>
+      </div>
+      <!--IT is for time shown the time on music bar start end time -->
+      <div class="time-info">
+        <span id="current-time">0:00</span>
+        <span id="total-time">0:00</span>
+      </div>
+      <input type="range" id="progress" value="0" />
+
+      <label>Volume</label>
+      <input type="range" id="volume" min="0" max="1" step="0.1" />
+
+      <h3>Playlist</h3>
+      <button id="add-song" style="margin-bottom: 10px">Add Song</button>
+      <ul id="playlist"></ul>
+    </div>
+
+    <script src="music.js"></script>
+  </body>
+</html>
